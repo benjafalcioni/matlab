@@ -20,3 +20,4 @@ xu=5;
 g=matlabFunction(f);
 biseccion(g,xl,xu,tol,n)
 
+
