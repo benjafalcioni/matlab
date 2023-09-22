@@ -8,7 +8,7 @@ for i=1:n
         delta(1:n,1)=0;
         delta(j)=max(10^(-5),0.001*abs(X0(j)));
         Fa=F(X0+delta);
-         B(i,j)=(Fa(i)-Fp(i))/delta(j);
+        B(i,j)=(Fa(i)-Fp(i))/delta(j);
     end
 end
 
