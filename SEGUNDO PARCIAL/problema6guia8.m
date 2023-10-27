@@ -11,3 +11,11 @@ fplot(matlabFunction(pollagrange),[0,7],'--r')
 fplot(polci,[0,7],'p')
 %los coeficientes son ligeramente distintos divido a que se obtienen de distintas
 %maneras y pueden haber errores de redondeo o truncado.
+%inciso c
+fplot(@(X) 1.591*log(X)+3.716,[0,7],'y')
+%no son exactas las estimaciones pero a siple viste son muy cercanas.
+lag=matlabFunction(pollagrange);
+%coefic=matlabFunction(polci);
+r=@(X) 1.591*log(X)+3.716;
+errorlagrange=abs((lag(6)-r(6))/r(6))*100
+errorci=abs((polci(6)-r(6))/r(6))*100
