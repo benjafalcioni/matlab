@@ -17,8 +17,9 @@ trap2int=vpa(trapecio(X,Y))
 X=[1,7/4,5/2,13/4,4];
 Y=[subs(fs,1),subs(fs,7/4),subs(fs,5/2),subs(fs,13/4),subs(fs,4)];
 trap4int=vpa(trapecio(X,Y))
-%inciso e ..........
-
+%inciso e aproximacion richardson 
+Aprox1=4/3*trap2int-1/3*trap1int
+Aprox2=4/3*trap4int-1/3*trap2int
 %inciso f
 X=[1, 5/2,4];
 h=3/2;
